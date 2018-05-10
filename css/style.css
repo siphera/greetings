@@ -17,3 +17,15 @@ td {
   height: auto;
   margin-bottom: 1em;
 }
+
+.greetings {
+    background-color: aqua;
+}
+
+.counter {
+    font-size: 30px;
+    font-weight: bold;
+}
+.language {
+    
+}

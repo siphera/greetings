@@ -8,17 +8,17 @@ function greetFunctionLogic() {
         
         if (lang === "english"){
             
-            englishCount += 1;
+            return "molo," + " name";
         }
         
         if (lang === "isixhosa"){
             
-            isixhosaCount += 1;
+            return "hello," + "name";
         }
         
         else if (lang === "afrikaans"){
             
-            afrikaansCount += 1;
+            return "hallo" + "name";
         }
         overallCount = englishCount + isixhosaCount + afrikaansCount;
     }
