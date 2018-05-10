@@ -1,6 +1,6 @@
 .greet-h1 {
     text-align: center;
-    text-shadow: 3;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
 td {
     font-weight: bold;
@@ -29,3 +29,7 @@ td {
 .language {
     
 }
+/*
+input[type="radio"]{
+  margin: 20px 30px;
+}*/
