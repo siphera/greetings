@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Greetings</title>
+  <meta name="greeting page in different languages" content="">
+  <meta name="siphenkosi salman" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css"
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+    <div class="container box">
+        <div class="row">
+            <div class="twelve columns">
+                <h1 class="greet-h1">GREETINGS</h1>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="twelve columns">
+                <label>Your Name</label>
+                <input class="u-full-width" type="text" placeholder="Enter your name here!" required>
+                <br>
+<!--                <h6 class="counter-h6">Counter : <span class="counter">0</span></h6>-->
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="twelve columns">
+                <label>Choose Language</label>
+                <input type="radio" name="language" class="language" value="english">
+                <span class="label-body">English</span>
+                
+                <input type="radio" name="language" class="language" value="isixhosa">
+                <span>IsiXhosa</span>
+                
+                <input type="radio" name="language" class="language" value="afrikaans">
+                <span>Afrikaans</span>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="twelve columns">
+                <span class="output">Output will show here</span>
+                <br>
+                <table>
+                    <tr>
+                      <td>English Counter</td>
+                      <td><span class="englishTotal">0</span></td>
+                    </tr>
+                    <tr>
+                      <td>IsiXhosa Counter</td>
+                      <td><span class="isixhosaTotal">0</span></td>
+                    </tr>
+                    <tr >
+                      <td>Afrikaans Counter</td>
+                      <td><span class="afrikaansTotal">0</span></td>
+                    </tr>
+                    <tr >
+                      <td>Overall Counter</td>
+                      <td><span class="overallCouter">0</span></td>
+                    </tr>
+                  </table>
+                
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="twelve columns">
+                <button class="button-primary greetBtn" type="button" name="button">Greet</button>
+                
+                <button class="button-primary clearBtn" type="button" name="button">Clear</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/greet.js" charset="utf-8"></script>
+    <script src="js/greet-logic.js" charset="utf-8"></script>
+</body>
+</html>

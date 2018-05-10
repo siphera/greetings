@@ -1,0 +1,19 @@
+.greet-h1 {
+    text-align: center;
+    text-shadow: 3;
+}
+td {
+    font-weight: bold;
+}
+
+.output {
+    align: center;
+}
+
+.box {
+  padding: 0.75em;
+  border-radius : 0.5em;
+  border : 1px solid #ddd;
+  height: auto;
+  margin-bottom: 1em;
+}
