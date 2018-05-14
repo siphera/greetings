@@ -25,7 +25,7 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="images/android-icon-36x36.png">
 
 </head>
 <body>
@@ -39,7 +39,7 @@
         <div class="row">
             <div class="twelve columns">
                 <label>Your Name</label>
-                <input class="ten columns" type="text" placeholder="Enter your name here!" required>
+                <input class="ten columns nameInputField" type="text" onfocus="clearInput(this)" placeholder="Enter your name here!" required>
                 
                 <span class="counter one column">0</span>
             </div>
@@ -71,9 +71,9 @@
         <br>
         <div class="row">
             <div class="twelve columns">
-                <button class="button-primary six columns greetBtn" type="button" name="button" onclick="clickCounter()">Greet Me</button>
+                <button class="button-primary six columns greetBtn" type="button" name="button" >Greet Me</button>
                 
-                <button class="button-primary six columns clearBtn" type="button" name="button" onclick="clearClicked()" >Clear</button>
+                <button class="button-primary six columns clearBtn" type="button" name="button">Clear</button>
             </div>
         </div>
         
@@ -88,6 +88,6 @@
     </div>
     
     <script src="js/greet.js" charset="utf-8"></script>
-    <script src="js/greet-logic.js" charset="utf-8"></script>
+    
 </body>
 </html>
