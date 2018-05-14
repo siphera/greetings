@@ -41,6 +41,21 @@ function greetings(data){
             return "Molo, " + name;
         }
     }
+    
+    
+    function getName() {
+        return name;
+    }
+    
+    function getLanguage(){
+        return language;
+    }
+    
+    function getGreeedNames() {
+        return greetedNames;
+    }
+    
+    function 
 }
 
 //--------------------------------------------------------------------
