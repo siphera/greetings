@@ -51,11 +51,17 @@ function greetings(data){
         return language;
     }
     
-    function getGreeedNames() {
+    function getGreetedNames() {
         return greetedNames;
     }
     
-    function 
+    function bGreetedNames(){
+        return greetedNames = {};
+    }
+    
+    function namesCounter() {
+        return Object.keys(greetedNames).length;
+    }
 }
 
 //--------------------------------------------------------------------
