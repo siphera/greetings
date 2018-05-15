@@ -62,6 +62,10 @@ function greetings(data){
     function namesCounter() {
         return Object.keys(greetedNames).length;
     }
+    
+    return {
+        
+    }
 }
 
 //--------------------------------------------------------------------
@@ -76,7 +80,7 @@ function clickCounter() {
         document.querySelector(".counter").innerHTML = localStorage.clickcount;
     }
     
-    function clearInput(element){
+    function clearInput(element){                   
 element.value="";
 }
 }
