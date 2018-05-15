@@ -82,17 +82,12 @@ function clickCounter() {
     
     function clearInput(element){                   
 element.value="";
-}
+    }
 }
 
 function clearClicked() {
   localStorage.clear();
-//  addToStorage.reset();
   window.location.reload();
-//  counterOfNameElement.innerHTML = addToStorage.counter();
-//  console.log(localStorage.clear());
-    
-    
 }
 
 greetMe.addEventListener("click", clickCounter);
