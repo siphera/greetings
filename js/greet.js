@@ -68,7 +68,7 @@ function greetings(data){
     }
 }
 
-//--------------------------------------------------------------------
+
 //----------------------buttons----------------------------
 function clickCounter() {
     if(typeof(Storage) !== "undefined") {
