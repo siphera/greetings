@@ -1,14 +1,14 @@
 var nameInput = document.querySelector(".nameInputField");
 var nameCounter = document.querySelector(".counter");
 var greetMe = document.querySelector(".greetBtn");
-var clear =document.querySelector(".clearBtn");
+var clearButton =document.querySelector(".clearBtn");
 var display = document.querySelector('.output');
+var outputResults = document.querySelector(".outputRes")
 
-
-function greetings(data){
-    var name = "";
-    var language = "";
+function greetings(data) {
     var greetedNames= {};
+    var name = "";
+    var lang = "";
     
     function setName(value) {
         if (value !== " ") {
@@ -17,45 +17,44 @@ function greetings(data){
     }
     
     function setLanguage(value) {
-        language = value;
+        lang = value;
     }
     
     function setGreetedNames() {
         if (data) {
             greetedNames = data;
         }
-        
         if (name !== "") {
             if (greetedNames[name] === undefined) {
-                greetedNames[name] = 0
+                greetedNames[name] = 0;
             }
         }
     }
     
     function greetLogic() {
-        if (language === english) {
-            return "Hello, " + name;
-        } else if (language === afrikaans) {
+        if (lang === english) {
+            return "Hello, " + name;  
+        } else if (lang === afrikaans) {
             return "Hallo, " + name;
-        } else if (language === isixhosa) {
+            
+        } if (lang === isixhosa) {
             return "Molo, " + name;
         }
     }
-    
-    
+
     function getName() {
         return name;
     }
     
-    function getLanguage(){
-        return language;
+    function getLanguage() {
+        return lang;
     }
     
     function getGreetedNames() {
         return greetedNames;
     }
     
-    function bGreetedNames(){
+    function resetGreetedNames() {
         return greetedNames = {};
     }
     
@@ -64,31 +63,15 @@ function greetings(data){
     }
     
     return {
-        
+        names: setName,
+        language: setLanguage,
+        reset: resetGreetedNames,
+        namesGrtd: setGreetedNames,
+        getName: getName,
+        getGreetedNames: getGreetedNames,
+        outputMsg: greetLogic,
+        nameMap: getGreetedNames,
+        counter: namesCounter
+
     }
 }
-
-
-//----------------------buttons----------------------------
-function clickCounter() {
-    if(typeof(Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount)+1;
-        } else {
-            localStorage.clickcount = 1;
-        }
-        document.querySelector(".counter").innerHTML = localStorage.clickcount;
-    }
-    
-    function clearInput(element){                   
-element.value="";
-    }
-}
-
-function clearClicked() {
-  localStorage.clear();
-  window.location.reload();
-}
-
-greetMe.addEventListener("click", clickCounter);
-clear.addEventListener("click", clearClicked);
