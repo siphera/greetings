@@ -75,3 +75,26 @@ function greetings(data) {
 
     }
 }
+
+
+var data = localStorage.getItem('Names') ? JSON.parse(localStorage.getItem('Names')) : {};
+var addToData = greetings(data);
+nameCounter.innerHTML = Object.keys(data).length;
+
+function greetMeBtn() {
+  var radioCheck = document.querySelector("input[name='language']:checked");
+  var enterLanguage = radioCheck.value;
+  var name = nameInput.value.trim();
+  addToData.names(name);
+  addToData.language(enterLanguage);
+  addToData.namesGrtd();
+  localStorage.setItem("Names", JSON.stringify(addToData.nameMap()));
+  nameCounter.innerHTML = addToData.counter();
+  outputResults.innerHTML = addToData.outputMsg();
+  nameInput.value = "";
+  if (name == "") {
+  outputResults.innerHTML = "Enter namesssss";
+
+  }
+}
+
