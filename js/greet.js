@@ -98,3 +98,10 @@ function greetMeBtn() {
   }
 }
 
+function clearData() {
+    
+}
+
+
+greetMe.addEventListener('click', greetMeBtn);
+clearButton.addEventListener('click', clearData);
