@@ -1,9 +1,9 @@
 var nameInput = document.querySelector(".nameInputField");
 var nameCounter = document.querySelector(".counter");
+var display = document.querySelector('.output');
+var outputResults = document.querySelector(".outputRes");
 var greetMe = document.querySelector(".greetBtn");
 var clearButton =document.querySelector(".clearBtn");
-var display = document.querySelector('.output');
-var outputResults = document.querySelector(".outputRes")
 
 function greetings(data) {
     var greetedNames= {};
@@ -32,12 +32,13 @@ function greetings(data) {
     }
     
     function greetLogic() {
-        if (lang === english) {
+        if (lang === "english") {
             return "Hello, " + name;  
-        } else if (lang === afrikaans) {
+            
+        } else if (lang === "afrikaans") {
             return "Hallo, " + name;
             
-        } if (lang === isixhosa) {
+        } if (lang === "isixhosa") {
             return "Molo, " + name;
         }
     }
