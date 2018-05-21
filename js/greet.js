@@ -99,8 +99,9 @@ function greetMeBtn() {
 }
 
 function clearData() {
-    localStorage.clear();
     window.location.reload();
+    localStorage.clear();
+    outputResults.innerHTML = "Type in your name and choose language";
 }
 
 
