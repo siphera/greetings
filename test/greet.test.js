@@ -14,6 +14,13 @@ describe("greet function", function() {
     });
     
     
+    it("It should Greet the user in isixhosa", function() {
+        var greeting = greetings();
+        greeting.names("siphenkosi")
+        greeting.language("isixhosa");
+        assert.equal(greeting.outputMsg(), "Molo, siphenkosi");
+    });
+    
     
     
 });    
