@@ -17,6 +17,7 @@ td {
   height: auto;
   margin-bottom: 1em;
   box-shadow: 10px 10px #5a5858;
+  
 }
 
 .greetings {
@@ -40,4 +41,11 @@ input[type="radio"]{
   display: block;
   margin-left: auto;
   margin-right: auto 
+}
+
+.outputRes {
+    font-size: 40px;
+    font-weight: bold;
+    color: blue;
+    text-shadow: 2px 2px 8px aqua;
 }
