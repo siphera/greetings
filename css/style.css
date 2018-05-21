@@ -57,3 +57,7 @@ input[type="radio"]{
     color: blue;
     text-shadow: 2px 2px 8px aqua;
 }
+
+footer {
+    text-align: center;
+}
