@@ -99,7 +99,8 @@ function greetMeBtn() {
 }
 
 function clearData() {
-    
+    localStorage.clear();
+    window.location.reload();
 }
 
 
