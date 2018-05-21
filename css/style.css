@@ -34,3 +34,10 @@ td {
 input[type="radio"]{
   margin: 20px 30px;
 }*/
+.greetingIMG {
+  width: 200px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
