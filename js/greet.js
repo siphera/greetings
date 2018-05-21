@@ -102,7 +102,7 @@ function greetMeBtn() {
 function clearData() {
     window.location.reload();
     localStorage.clear();
-    outputResults.innerHTML = "Type in your name and choose language";
+//    outputResults.innerHTML = "Type in your name and choose language";
 }
 
 
