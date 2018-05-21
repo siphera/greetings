@@ -21,6 +21,27 @@ describe("greet function", function() {
         assert.equal(greeting.outputMsg(), "Molo, siphenkosi");
     });
     
+    it("It should Greet the user in afrikaans", function() {
+        var greeting = greetings();
+        greeting.names("siphenkosi")
+        greeting.language("afrikaans");
+        assert.equal(greeting.outputMsg(), "Hallo, siphenkosi");
+    });
     
+    
+//    it("It should return the correct count of names greeted", function() {
+//        var greeting = greetings({});
+//        
+//        greeting.names("siphenkosi")
+//        greeting.language("afrikaans");
+//        
+//        greeting.names("sabelo")
+//        greeting.language("isixhosa");
+//        
+//        greeting.names("ayanda")
+//        greeting.language("english");
+//        
+//        assert.equal(greeting.counter(),3);
+//    });
     
 });    
