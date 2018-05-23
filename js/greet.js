@@ -5,6 +5,11 @@ var outputResults = document.querySelector(".outputRes");
 var greetMe = document.querySelector(".greetBtn");
 var clearButton =document.querySelector(".clearBtn");
 
+var input = document.getElementsByTagName("input")[0]
+input.oninput = function() {
+  input.value = input.value.toLowerCase()
+}
+
 function greetings(data) {
     var greetedNames= {};
     var name = "";
