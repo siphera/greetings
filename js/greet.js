@@ -94,7 +94,7 @@ function greetMeBtn() {
   outputResults.innerHTML = addToData.outputMsg();
   nameInput.value = "";
   if (name == "") {
-  outputResults.innerHTML = "Enter name and choose language you want to be greeted in!!!";
+  outputResults.innerHTML = "Enter name and choose language";
 //      alert("Enter name and choose language you want to be greeted in!!!");
   }
 }
