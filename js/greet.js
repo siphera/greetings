@@ -100,7 +100,9 @@ function greetMeBtn() {
   nameInput.value = "";
   if (name == "") {
   outputResults.innerHTML = "Enter name and choose language";
-//      alert("Enter name and choose language you want to be greeted in!!!");
+  }
+  if (enterLanguage === null) {
+      outputResults.innerHTML = "choose language";
   }
 }
 
