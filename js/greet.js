@@ -9,6 +9,10 @@ var input = document.getElementsByTagName("input")[0]
 input.oninput = function() {
   input.value = input.value.toLowerCase()
 }
+function rmvNumChar(input){
+            var regex = /[^a-z]/gi;
+            input.value = input.value.replace(regex, "");
+        }
 
 function greetings(data) {
     var greetedNames= {};
@@ -87,8 +91,33 @@ var data = localStorage.getItem('Names') ? JSON.parse(localStorage.getItem('Name
 var addToData = greetings(data);
 nameCounter.innerHTML = Object.keys(data).length;
 
+//function greetMeBtn() {
+//  var radioCheck = document.querySelector("input[name='language']:checked");
+//  var enterLanguage = radioCheck.value;
+//  var name = nameInput.value.trim();
+//  addToData.names(name);
+//  addToData.language(enterLanguage);
+//  addToData.namesGrtd();
+//  localStorage.setItem("Names", JSON.stringify(addToData.nameMap()));
+//  nameCounter.innerHTML = addToData.counter();
+//  outputResults.innerHTML = addToData.outputMsg();
+//  nameInput.value = "";
+//  if (nameInput.value === "") {
+//      outputResults.innerHTML = "Enter name and choose language";
+//      outputResults.classList.add("red");
+//  }
+//    
+//}
+//--------------------------------
 function greetMeBtn() {
-  var radioCheck = document.querySelector("input[name='language']:checked");
+    let radioCheck = document.querySelector("input[name='language']:checked");
+    
+    if (nameInput.value === "" || !radioCheck) {
+      outputResults.innerHTML = "Enter name and choose language";
+      outputResults.classList.add("red");
+  }
+    else {
+        
   var enterLanguage = radioCheck.value;
   var name = nameInput.value.trim();
   addToData.names(name);
@@ -98,14 +127,11 @@ function greetMeBtn() {
   nameCounter.innerHTML = addToData.counter();
   outputResults.innerHTML = addToData.outputMsg();
   nameInput.value = "";
-  if (name == "") {
-  outputResults.innerHTML = "Enter name and choose language";
-  }
-  if (enterLanguage === null) {
-      outputResults.innerHTML = "choose language";
-  }
+    }
 }
 
+
+//--------------------------------
 function clearData() {
     window.location.reload();
     localStorage.clear();
