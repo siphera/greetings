@@ -127,6 +127,7 @@ function greetMeBtn() {
   nameCounter.innerHTML = addToData.counter();
   outputResults.innerHTML = addToData.outputMsg();
   nameInput.value = "";
+  outputResults.classList.add("blue")
     }
 }
 
