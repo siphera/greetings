@@ -18,17 +18,17 @@ function greetings(data) {
     var greetedNames= {};
     var name = "";
     var lang = "";
-    
+
     function setName(value) {
         if (value !== " ") {
             name = value;
         }
     }
-    
+
     function setLanguage(value) {
         lang = value;
     }
-    
+
     function setGreetedNames() {
         if (data) {
             greetedNames = data;
@@ -39,14 +39,14 @@ function greetings(data) {
             }
         }
     }
-    
+
     function greetLogic() {
         if (lang === "english") {
-            return "Hello, " + name;  
-            
+            return "Hello, " + name;
+
         } else if (lang === "afrikaans") {
             return "Hallo, " + name;
-            
+
         } if (lang === "isixhosa") {
             return "Molo, " + name;
         }
@@ -55,23 +55,23 @@ function greetings(data) {
     function getName() {
         return name;
     }
-    
+
     function getLanguage() {
         return lang;
     }
-    
+
     function getGreetedNames() {
         return greetedNames;
     }
-    
+
     function resetGreetedNames() {
         return greetedNames = {};
     }
-    
+
     function namesCounter() {
         return Object.keys(greetedNames).length;
     }
-    
+
     return {
         names: setName,
         language: setLanguage,
@@ -106,18 +106,18 @@ nameCounter.innerHTML = Object.keys(data).length;
 //      outputResults.innerHTML = "Enter name and choose language";
 //      outputResults.classList.add("red");
 //  }
-//    
+//
 //}
 //--------------------------------
 function greetMeBtn() {
     let radioCheck = document.querySelector("input[name='language']:checked");
-    
+
     if (nameInput.value === "" || !radioCheck) {
       outputResults.innerHTML = "Enter name and choose language";
       outputResults.classList.add("red");
   }
     else {
-        
+
   var enterLanguage = radioCheck.value;
   var name = nameInput.value.trim();
   addToData.names(name);
