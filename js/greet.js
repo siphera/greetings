@@ -91,23 +91,6 @@ var data = localStorage.getItem('Names') ? JSON.parse(localStorage.getItem('Name
 var addToData = greetings(data);
 nameCounter.innerHTML = Object.keys(data).length;
 
-//function greetMeBtn() {
-//  var radioCheck = document.querySelector("input[name='language']:checked");
-//  var enterLanguage = radioCheck.value;
-//  var name = nameInput.value.trim();
-//  addToData.names(name);
-//  addToData.language(enterLanguage);
-//  addToData.namesGrtd();
-//  localStorage.setItem("Names", JSON.stringify(addToData.nameMap()));
-//  nameCounter.innerHTML = addToData.counter();
-//  outputResults.innerHTML = addToData.outputMsg();
-//  nameInput.value = "";
-//  if (nameInput.value === "") {
-//      outputResults.innerHTML = "Enter name and choose language";
-//      outputResults.classList.add("red");
-//  }
-//
-//}
 //--------------------------------
 function greetMeBtn() {
     let radioCheck = document.querySelector("input[name='language']:checked");
@@ -136,7 +119,6 @@ function greetMeBtn() {
 function clearData() {
     window.location.reload();
     localStorage.clear();
-//    outputResults.innerHTML = "Type in your name and choose language";
 }
 
 
