@@ -80,7 +80,7 @@ describe("greet function", function() {
       //
       //   error.names("");
       //   error.language(!radioCheck);
-      // 
+      //
       //   assert.equal(error.outputMsg(), "Enter name and choose language")
       // })
 
