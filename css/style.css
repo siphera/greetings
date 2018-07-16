@@ -48,6 +48,14 @@ td {
     margin-right: auto;
 }
 
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
 .outputRes {
     font-size: 40px;
     font-weight: bold;

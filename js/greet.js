@@ -4,6 +4,7 @@ var display = document.querySelector('.output');
 var outputResults = document.querySelector(".outputRes");
 var greetMe = document.querySelector(".greetBtn");
 var clearButton =document.querySelector(".clearBtn");
+var image = document.querySelector(".greetIMG");
 
 var input = document.getElementsByTagName("input")[0]
 input.oninput = function() {
@@ -110,7 +111,7 @@ function greetMeBtn() {
   nameCounter.innerHTML = addToData.counter();
   outputResults.innerHTML = addToData.outputMsg();
   nameInput.value = "";
-  outputResults.classList.add("blue")
+  outputResults.classList.add("blue");
     }
 }
 
